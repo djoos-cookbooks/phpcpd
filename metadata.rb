@@ -12,4 +12,6 @@ end
 
 depends "php"
 
-recipe "phpcpd", "Installs phpcpd using PEAR."
+recipe "phpcpd", "Installs phpcpd."
+recipe "phpcpd::composer", "Installs phpcpd using composer."
+recipe "phpcpd::phar", "Installs phpcpd using phar."
