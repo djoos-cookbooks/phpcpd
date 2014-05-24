@@ -5,5 +5,5 @@
 # Copyright 2013-2014, Escape Studios
 #
 
-default['phpcpd']['install_method'] = "composer"
-default['phpcpd']['version'] = "latest"
+default['phpcpd']['install_method'] = 'composer'
+default['phpcpd']['version'] = 'latest'

@@ -6,8 +6,8 @@
 #
 
 case node['phpcpd']['install_method']
-    when "composer"
-        include_recipe "phpcpd::composer"
-    when "phar"
-        include_recipe "phpcpd::phar"
+when 'composer'
+  include_recipe 'phpcpd::composer'
+when 'phar'
+  include_recipe 'phpcpd::phar'
 end

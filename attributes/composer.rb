@@ -5,4 +5,4 @@
 # Copyright 2013-2014, Escape Studios
 #
 
-default['phpcpd']['prefix'] = "/usr/bin"
+default['phpcpd']['prefix'] = '/usr/bin'
