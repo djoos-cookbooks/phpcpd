@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/escapestudios-cookbooks/phpcpd.png)](http://travis-ci.org/escapestudios-cookbooks/phpcpd)
+
 Description
 ===========
 
