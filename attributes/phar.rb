@@ -6,4 +6,3 @@
 #
 
 default['phpcpd']['phar_url'] = 'https://phar.phpunit.de/phpcpd.phar'
-default['phpcpd']['install_dir'] = '/usr/bin'

@@ -5,10 +5,9 @@
 # Copyright (c) 2016, David Joos
 #
 
-include_recipe 'git'
 include_recipe 'composer'
 
-phpcpd_dir = "#{Chef::Config[:file_cache_path]}/phpcpd"
+phpcpd_dir = node['phpcpd']['install_dir']
 
 directory phpcpd_dir do
   owner 'root'
@@ -32,7 +31,7 @@ template "#{phpcpd_dir}/composer.json" do
   mode 0600
   variables(
     :version => version,
-    :bindir => node['phpcpd']['prefix']
+    :bindir => node['phpcpd']['bin_dir']
   )
 end
 
