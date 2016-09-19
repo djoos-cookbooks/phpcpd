@@ -2,7 +2,7 @@
 # Cookbook Name:: phpcpd
 # Recipe:: composer
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 include_recipe 'git'
@@ -18,11 +18,11 @@ directory phpcpd_dir do
 end
 
 # figure out what version to install
-if node['phpcpd']['version'] != 'latest'
-  version = node['phpcpd']['version']
-else
-  version = '*.*.*'
-end
+version = if node['phpcpd']['version'] != 'latest'
+            node['phpcpd']['version']
+          else
+            '*.*.*'
+          end
 
 # composer.json
 template "#{phpcpd_dir}/composer.json" do
