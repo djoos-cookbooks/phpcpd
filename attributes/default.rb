@@ -7,3 +7,4 @@
 
 default['phpcpd']['install_method'] = 'composer'
 default['phpcpd']['version'] = 'latest'
+default['phpcpd']['bin_dir'] = '/usr/bin'

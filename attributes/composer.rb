@@ -5,4 +5,4 @@
 # Copyright (c) 2016, David Joos
 #
 
-default['phpcpd']['prefix'] = '/usr/bin'
+default['phpcpd']['install_dir'] = '/usr/local/phpcpd'
